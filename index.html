@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="blog.html">
+<body>
+<style type="text/css">
+	.w3-btn{
+		margin: 0 auto;
+	}
+</style>
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-closenav w3-large">Close &times;</a>
+  <a href="index.html">Home</a>
+  <a href="blog.html">My blog</a>
+  <a href="diary.html">Diary</a>
+  <a href="message.html">Message</a>
+  <a href="Album.html">Album</a>
+</nav>
+
+<header class="w3-container w3-teal">
+  <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+  <h1>My couner</h1>
+</header>
+
+<div class="deng" style="margin:0 auto;width:25%">
+		<button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+		<img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+		<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+</div>	
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/caikuan.jpg" style="width:100%">
+<div class="w3-container">
+<h4>5 Terre</h4>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/cat.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Monterosso</h4>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/city.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Vernazza</h4>
+</div>
+</div>
+</div>
+
+</div>
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/doushi.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Manarola</h4>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/shanshui.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Corniglia</h4>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-2">
+<img src="images/ye.jpg" style="width:100%">
+<div class="w3-container">
+<h4>Riomaggiore</h4>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="w3-container w3-teal">
+  
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green w3-large">Login</button>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+  
+    <div class="w3-center"><br>
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+      <img src="images/" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+    </div>
+
+    <form class="w3-container" action="form.asp">
+      <div class="w3-section">
+        <label><b>Username</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+
+        <label><b>Password</b></label>
+        <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+
+        <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Login</button>
+        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+      </div>
+    </form>
+
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+      <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+    </div>
+
+  </div>
+</footer>
+     
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 
